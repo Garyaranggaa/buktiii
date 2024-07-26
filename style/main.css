@@ -1,8 +1,4 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
+html {
   box-sizing: border-box;
 }
 
@@ -16,32 +12,42 @@ body {
 }
 
 .container {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   margin: 0 auto;
-  overflow-y: auto; /* Ensure container can be scrolled */
+  overflow: auto; /* Menambahkan scroll jika diperlukan */
   position: relative;
   text-align: center;
-  width: 100vw;
+  display: flex; /* Flexbox untuk menata elemen di dalamnya */
+  flex-direction: column;
+  justify-content: center; /* Menyusun elemen secara vertikal */
 }
 
 .container > div {
-  left: 0;
   position: relative;
-  right: 0;
-  top: 20vh;
+  text-align: center;
+  width: 100%;
 }
 
 .one {
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .two {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: lighter;
 }
 
 .three {
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.four {
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 90%; /* Atur lebar agar sesuai dengan viewport */
+  max-width: 600px; /* Lebar maksimum */
 }
 
 .four .text-box {
@@ -50,7 +56,8 @@ body {
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .text-box p {
@@ -65,7 +72,7 @@ body {
 .text-box .fake-btn {
   background-color: rgb(21, 161, 237);
   border-radius: 3px;
-  bottom: -38px;
+  bottom: -50px;
   color: #fff;
   padding: .5rem 1rem;
   position: absolute;
@@ -73,7 +80,7 @@ body {
 }
 
 .five p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   left: 0;
   position: absolute;
   right: 0;
@@ -86,7 +93,7 @@ body {
 }
 
 .five .idea-5 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .idea-5 span, .idea-6 span, .wish-hbd span {
@@ -94,7 +101,7 @@ body {
 }
 
 .idea-6 span {
-  font-size: 8rem;
+  font-size: 15rem;
 }
 
 .six {
@@ -105,7 +112,7 @@ body {
 
 .six img {
   display: inline-block;
-  height: 250px;
+  height: 350px;
   max-width: 100%;
 }
 
@@ -113,7 +120,7 @@ body {
   left: 70%;
   position: absolute;
   top: -47%;
-  width: 60px;
+  width: 80px;
 }
 
 .baloons img {
@@ -204,19 +211,19 @@ body {
 }
 
 .wish-hbd {
-  font-size: 2em;
+  font-size: 3em;
   margin: 0;
   text-transform: uppercase;
 }
 
 .wish h5 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: lighter;
   margin: 10px 0 0;
 }
 
 .nine p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
@@ -269,7 +276,7 @@ body {
   }
 
   .idea-6 span {
-    font-size: 6rem;
+    font-size: 10rem;
   }
 
   .six .hat {
@@ -277,15 +284,15 @@ body {
   }
 
   .wish-hbd {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
 
   .wish h5 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .nine p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: lighter;
   }
 }
