@@ -43,7 +43,7 @@ body {
 
 .four .text-box {
   border: 3px solid #aaa;
-  border-radius: 3px;
+  border-radius: 1px;
   margin: 0 auto;
   padding: 5px;
   position: relative;
